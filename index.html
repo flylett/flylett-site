@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flylett | Cheap Flights & Travel Deals</title>
   <link rel="stylesheet" href="style.css">
-
   <style>
     body {
       margin: 0;
@@ -26,10 +25,6 @@
     header p {
       font-size: 1.2em;
       color: #ccc;
-    }
-    .logo {
-      width: 100px;
-      margin-bottom: 20px;
     }
     .widget-section, .affiliate-tools, .destinations, .blog-preview {
       margin: 40px auto;
@@ -67,6 +62,17 @@
       margin: 10px;
       color: #fff;
     }
+    .affiliate-tools ul {
+      list-style: none;
+      padding: 0;
+    }
+    .affiliate-tools li {
+      margin: 10px 0;
+    }
+    .affiliate-tools a {
+      color: #58aaff;
+      text-decoration: none;
+    }
     footer {
       background-color: #001a2c;
       text-align: center;
@@ -76,7 +82,7 @@
     }
   </style>
 
-  <!-- Travelpayout connection -->
+  <!-- Travelpayout connection (must always be included) -->
   <script data-noptimize="1" data-cfasync="false" data-wpfc-render="false">
     (function () {
       var script = document.createElement("script");
@@ -88,29 +94,40 @@
 </head>
 
 <body>
+
   <header>
-    <img src="logo.png" class="logo" alt="Flylett logo">
+    <img src="logo.png" alt="Flylett Logo" style="width: 120px; margin-bottom: 20px;">
     <h1>Welcome to Flylett</h1>
     <p>Book flights, find deals, and plan your trip — all in one place</p>
   </header>
 
+  <!-- Flight Search Widget -->
   <div class="widget-section">
-    <iframe 
-      src="https://tp.media/content?currency=usd&trs=414421&shmarker=629253&color_button=%23FF0000&target_host=www.aviasales.com%2Fsearch&locale=en&powered_by=true&origin=LON&destination=BKK&with_fallback=false&non_direct_flights=true&min_lines=5&border_radius=0&color_background=%23FFFFFF&color_text=%23000000&color_border=%23FFFFFF&promo_id=2811&campaign_id=100" 
-      frameborder="0" 
-      scrolling="no">
-    </iframe>
+    <script async src="https://tp.media/content?currency=usd&trs=414421&shmarker=629253&color_button=%23FF0000&target_host=www.aviasales.com%2Fsearch&locale=en&powered_by=true&origin=LON&destination=BKK&with_fallback=false&non_direct_flights=true&min_lines=5&border_radius=0&color_background=%23FFFFFF&color_text=%23000000&color_border=%23FFFFFF&promo_id=2811&campaign_id=100" charset="utf-8"></script>
   </div>
 
+  <!-- Top Destinations -->
   <section class="destinations">
     <h2>Top Destinations</h2>
     <div class="cards">
-      <a href="#" target="_blank"><div class="card"><img src="dubai.jpg"><p>Dubai</p></div></a>
-      <a href="#" target="_blank"><div class="card"><img src="amsterdam.jpg"><p>Amsterdam</p></div></a>
-      <a href="#" target="_blank"><div class="card"><img src="doha.jpg"><p>Doha</p></div></a>
+      <a href="https://aviasales.tp.st/KirxJIna" target="_blank"><div class="card"><img src="dubai.jpg"><p>Dubai</p></div></a>
+      <a href="https://aviasales.tp.st/KirxJIna" target="_blank"><div class="card"><img src="amsterdam.jpg"><p>Amsterdam</p></div></a>
+      <a href="https://aviasales.tp.st/KirxJIna" target="_blank"><div class="card"><img src="doha.jpg"><p>Doha</p></div></a>
     </div>
   </section>
 
+  <!-- Affiliate Services -->
+  <section class="affiliate-tools">
+    <h2>Travel Services</h2>
+    <ul>
+      <li><a href="https://tiqets.tp.st/tQ3NDLnm" target="_blank">Tiqets – Tickets</a></li>
+      <li><a href="https://trip.tp.st/4upLAU1y" target="_blank">Trip.com – Hotels & Tours</a></li>
+      <li><a href="https://wayaway.tp.st/cTYskRw3" target="_blank">WayAway – Cashback Flights</a></li>
+      <li><a href="https://aviasales.tp.st/KirxJIna" target="_blank">Aviasales – Flight Deals</a></li>
+    </ul>
+  </section>
+
+  <!-- Blog Teaser -->
   <section class="blog-preview">
     <h2>From the Blog</h2>
     <p>Coming soon: Travel tips, visa guides & destination reviews!</p>
@@ -119,5 +136,6 @@
   <footer>
     &copy; 2025 Flylett | Powered by Travelpayouts
   </footer>
+
 </body>
 </html>
